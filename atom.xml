@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-17T13:49:23.000Z</updated>
+  <updated>2016-02-17T14:23:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Pics on my Ins</title>
+    <link href="http://yoursite.com/2016/02/17/Pics-on-my-Ins/"/>
+    <id>http://yoursite.com/2016/02/17/Pics-on-my-Ins/</id>
+    <published>2016-02-17T14:17:16.000Z</published>
+    <updated>2016-02-17T14:23:11.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="摄影" scheme="http://yoursite.com/categories/%E6%91%84%E5%BD%B1/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>习惯养成的四点原则</title>
     <link href="http://yoursite.com/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/"/>
     <id>http://yoursite.com/2016/02/17/post习惯养成的四点原则/</id>
     <published>2016-02-17T13:45:38.000Z</published>
-    <updated>2016-02-17T13:49:23.000Z</updated>
+    <updated>2016-02-17T13:55:13.000Z</updated>
     
     <content type="html">&lt;p&gt;原文：《How I Became a Morning Person, Learned a New Language, and Read 5x More Books in 2015》&lt;a href=&quot;https://medium.com/life-learning/how-i-became-a-morning-person-learned-a-new-language-and-read-5x-more-books-in-2015-867ed067bb9#.8vfiqfp6d&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我们该如何养成一个好的习惯？本文作者给出的答案是「doing small things every day over a long period.」，也就是将习惯量化到一个较小的量级，这样有助于长期地坚持并最终为你带来积极的结果。作者在2015年里通过每天练习五分钟的法语，目前基础的读写说都没有问题，以及通过每晚阅读一页书，这一年的读书量是之前的5倍。&lt;/p&gt;
@@ -30,6 +48,7 @@
 &lt;p&gt;第三，Remove barriers: Have everything you need at hand. 例如，在自己的床头放本书可以在一定程度上促使你达成睡前的阅读习惯，这就是上面提到的三个「R」的 reminder。&lt;/p&gt;
 &lt;p&gt;第四，Stack habits: Build new routines onto existing ones，我们可以在已养成的习惯上叠加一个相关联的习惯，这也可以成为一个 reminder 来提醒自己完成某项任务。&lt;/p&gt;
 &lt;p&gt;如果你希望在新的一年里养成一些好习惯，不妨试试这些方法吧。&lt;/p&gt;
+&lt;p&gt;电台链接：&lt;a href=&quot;http://music.163.com/#/djradio?id=1631001&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://music.163.com/#/djradio?id=1631001&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -38,7 +57,7 @@
     
     </summary>
     
-      <category term="播客文本" scheme="http://yoursite.com/categories/%E6%92%AD%E5%AE%A2%E6%96%87%E6%9C%AC/"/>
+      <category term="电台节目文本" scheme="http://yoursite.com/categories/%E7%94%B5%E5%8F%B0%E8%8A%82%E7%9B%AE%E6%96%87%E6%9C%AC/"/>
     
     
   </entry>
