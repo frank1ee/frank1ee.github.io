@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Swift 下用代码实现渐变色背景 | Frank1ee</title>
+  <title>Tag: 电台 | Frank1ee</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -86,7 +86,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -227,69 +227,37 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-<section id="intro">
+
+
+<section id="services">
     <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2016-02-21T03:35:00.000Z" itemprop="datePublished">
-          2016-02-21
-      </time>
-    
-    
-    | 
-    <a href='/tags/Swift/'>Swift</a>
-    
-    
-</span>
-                <h1>Swift 下用代码实现渐变色背景</h1>
-            </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2016/02/17/post习惯养成的四点原则/">习惯养成的四点原则</a></h4>
+                            
+                            <p><time datetime="2016-02-17T13:45:38.000Z"><a href="/2016/02/17/post习惯养成的四点原则/">2016-02-17</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码来实现渐变色的背景，实现过程十分简单：<a id="more"></a></p>
-<h2 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h2><p>在需要改变背景的视图控制器的 ViewDidLoad 方法中添加下面的代码：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义渐变的颜色，多色渐变太魔性了，我们就用两种颜色</span></span><br><span class="line"><span class="keyword">let</span> topColor = <span class="type">UIColor</span>(red: (<span class="number">91</span>/<span class="number">255.0</span>), green: (<span class="number">91</span>/<span class="number">255.0</span>), blue: (<span class="number">91</span>/<span class="number">255.0</span>), alpha: <span class="number">1</span>) </span><br><span class="line"><span class="keyword">let</span> buttomColor = <span class="type">UIColor</span>(red: (<span class="number">24</span>/<span class="number">255.0</span>), green: (<span class="number">24</span>/<span class="number">255.0</span>), blue: (<span class="number">24</span>/<span class="number">255.0</span>), alpha: <span class="number">1</span>)</span><br><span class="line"><span class="comment">//将颜色和颜色的位置定义在数组内</span></span><br><span class="line"><span class="keyword">let</span> gradientColors: [<span class="type">CGColor</span>] = [topColor.<span class="type">CGColor</span>, buttomColor.<span class="type">CGColor</span>]</span><br><span class="line"><span class="keyword">let</span> gradientLocations: [<span class="type">CGFloat</span>] = [<span class="number">0.0</span>, <span class="number">1.0</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建CAGradientLayer实例并设置参数</span></span><br><span class="line"><span class="keyword">let</span> gradientLayer: <span class="type">CAGradientLayer</span> = <span class="type">CAGradientLayer</span>()</span><br><span class="line">gradientLayer.colors = gradientColors</span><br><span class="line">gradientLayer.locations = gradientLocations</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置其frame以及插入view的layer</span></span><br><span class="line">gradientLayer.frame = <span class="keyword">self</span>.view.frame</span><br><span class="line"><span class="keyword">self</span>.view.layer.insertSublayer(gradientLayer, atIndex: <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<p>这样就实现了渐变色背景：</p>
-<center> <img src="/images/gradientBG/screenShot.png" alt="alt text"> </center>
+    </div>
+</section> 
 
-
-<h2 id="简便复用过程"><a href="#简便复用过程" class="headerlink" title="简便复用过程"></a>简便复用过程</h2><p>如果多个 View 需要用到渐变，我们可以定义一个 CAGradientLayer 类的类拓展，并拷贝以上代码在此，需要复用时调用即可：</p>
-<center> <img src="/images/gradientBG/newFile.png" alt="alt text"> </center>
-
-<p><br></p>
-<h4 id="CAGradientLayer-GradientBG-swift"><a href="#CAGradientLayer-GradientBG-swift" class="headerlink" title="CAGradientLayer+GradientBG.swift:"></a>CAGradientLayer+GradientBG.swift:</h4><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">extension</span> <span class="title">CAGradientLayer</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="func"><span class="keyword">func</span> <span class="title">GradientLayer</span><span class="params">()</span></span> -&gt; <span class="type">CAGradientLayer</span> &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> topColor = <span class="type">UIColor</span>(red: (<span class="number">91</span>/<span class="number">255.0</span>), green: (<span class="number">91</span>/<span class="number">255.0</span>), blue: (<span class="number">91</span>/<span class="number">255.0</span>), alpha: <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">let</span> buttomColor = <span class="type">UIColor</span>(red: (<span class="number">24</span>/<span class="number">255.0</span>), green: (<span class="number">24</span>/<span class="number">255.0</span>), blue: (<span class="number">24</span>/<span class="number">255.0</span>), alpha: <span class="number">1</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> gradientColors: [<span class="type">CGColor</span>] = [topColor.<span class="type">CGColor</span>, buttomColor.<span class="type">CGColor</span>]</span><br><span class="line">        <span class="keyword">let</span> gradientLocations: [<span class="type">CGFloat</span>] = [<span class="number">0.0</span>, <span class="number">1.0</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> gradientLayer: <span class="type">CAGradientLayer</span> = <span class="type">CAGradientLayer</span>()</span><br><span class="line">        gradientLayer.colors = gradientColors</span><br><span class="line">        gradientLayer.locations = gradientLocations</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> gradientLayer</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>最后在需要改变的视图控制器的 ViewDidLoad 方法中调用该方法即可：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> gradientLayer = <span class="type">CAGradientLayer</span>().<span class="type">GradientLayer</span>()</span><br><span class="line">    gradientLayer.frame = <span class="keyword">self</span>.view.frame</span><br><span class="line">    <span class="keyword">self</span>.view.layer.insertSublayer(gradientLayer, atIndex: <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Do any additional setup after loading the view.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>“But how could you live and have no story to tell?"</p>
         </div>
-        <nav class="pagination" role="pagination">
-    
-    
-    <a class="pull-right" href="/2016/02/18/Pics-on-my-Instagram/">
-        Pics on my Instagram →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2016/02/21/Swift-下用代码实现渐变色背景/" data-title="Swift 下用代码实现渐变色背景" data-url="http://yoursite.com/2016/02/21/Swift-下用代码实现渐变色背景/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"frank1ee"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-</div>
     </div>
 </section>
-
-
       
 <!-- ============================ Footer =========================== -->
 

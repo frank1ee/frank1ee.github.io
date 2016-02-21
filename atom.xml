@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-21T03:45:03.000Z</updated>
+  <updated>2016-02-21T03:49:40.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/"/>
     <id>http://yoursite.com/2016/02/21/Swift-下用代码实现渐变色背景/</id>
     <published>2016-02-21T03:35:00.000Z</published>
-    <updated>2016-02-21T03:45:03.000Z</updated>
+    <updated>2016-02-21T03:49:40.000Z</updated>
     
-    <content type="html">&lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码来实现渐变色的背景，实现过程十分简单：&lt;/p&gt;
+    <content type="html">&lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码来实现渐变色的背景，实现过程十分简单：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;上代码&quot;&gt;&lt;a href=&quot;#上代码&quot; class=&quot;headerlink&quot; title=&quot;上代码&quot;&gt;&lt;/a&gt;上代码&lt;/h2&gt;&lt;p&gt;在需要改变背景的视图控制器的 ViewDidLoad 方法中添加下面的代码：&lt;/p&gt;
 &lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//定义渐变的颜色，多色渐变太魔性了，我们就用两种颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; topColor = &lt;span class=&quot;type&quot;&gt;UIColor&lt;/span&gt;(red: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), green: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), blue: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), alpha: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; buttomColor = &lt;span class=&quot;type&quot;&gt;UIColor&lt;/span&gt;(red: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), green: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), blue: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), alpha: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//将颜色和颜色的位置定义在数组内&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientColors: [&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;] = [topColor.&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;, buttomColor.&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientLocations: [&lt;span class=&quot;type&quot;&gt;CGFloat&lt;/span&gt;] = [&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1.0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建CAGradientLayer实例并设置参数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientLayer: &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt; = &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gradientLayer.colors = gradientColors&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gradientLayer.locations = gradientLocations&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//设置其frame以及插入view的layer&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gradientLayer.frame = &lt;span class=&quot;keyword&quot;&gt;self&lt;/span&gt;.view.frame&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;self&lt;/span&gt;.view.layer.insertSublayer(gradientLayer, atIndex: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;这样就实现了渐变色背景：&lt;/p&gt;
@@ -32,13 +32,14 @@
 &lt;h2 id=&quot;简便复用过程&quot;&gt;&lt;a href=&quot;#简便复用过程&quot; class=&quot;headerlink&quot; title=&quot;简便复用过程&quot;&gt;&lt;/a&gt;简便复用过程&lt;/h2&gt;&lt;p&gt;如果多个 View 需要用到渐变，我们可以定义一个 CAGradientLayer 类的类拓展，并拷贝以上代码在此，需要复用时调用即可：&lt;/p&gt;
 &lt;center&gt; &lt;img src=&quot;/images/gradientBG/newFile.png&quot; alt=&quot;alt text&quot;&gt; &lt;/center&gt;
 
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h4 id=&quot;CAGradientLayer-GradientBG-swift&quot;&gt;&lt;a href=&quot;#CAGradientLayer-GradientBG-swift&quot; class=&quot;headerlink&quot; title=&quot;CAGradientLayer+GradientBG.swift:&quot;&gt;&lt;/a&gt;CAGradientLayer+GradientBG.swift:&lt;/h4&gt;&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; UIKit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CAGradientLayer&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;func&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;GradientLayer&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt; -&amp;gt; &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; topColor = &lt;span class=&quot;type&quot;&gt;UIColor&lt;/span&gt;(red: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), green: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), blue: (&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), alpha: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; buttomColor = &lt;span class=&quot;type&quot;&gt;UIColor&lt;/span&gt;(red: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), green: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), blue: (&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;), alpha: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientColors: [&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;] = [topColor.&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;, buttomColor.&lt;span class=&quot;type&quot;&gt;CGColor&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientLocations: [&lt;span class=&quot;type&quot;&gt;CGFloat&lt;/span&gt;] = [&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1.0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientLayer: &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt; = &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        gradientLayer.colors = gradientColors&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        gradientLayer.locations = gradientLocations&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gradientLayer&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;最后在需要改变的视图控制器的 ViewDidLoad 方法中调用该方法即可：&lt;br&gt;&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;func&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;viewDidLoad&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;.viewDidLoad()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; gradientLayer = &lt;span class=&quot;type&quot;&gt;CAGradientLayer&lt;/span&gt;().&lt;span class=&quot;type&quot;&gt;GradientLayer&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    gradientLayer.frame = &lt;span class=&quot;keyword&quot;&gt;self&lt;/span&gt;.view.frame&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;self&lt;/span&gt;.view.layer.insertSublayer(gradientLayer, atIndex: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// Do any additional setup after loading the view.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码
+      &lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码来实现渐变色的背景，实现过程十分简单：
     
     </summary>
     
@@ -54,9 +55,10 @@
     <link href="http://yoursite.com/2016/02/18/Pics-on-my-Instagram/"/>
     <id>http://yoursite.com/2016/02/18/Pics-on-my-Instagram/</id>
     <published>2016-02-18T02:49:36.000Z</published>
-    <updated>2016-02-18T14:22:28.000Z</updated>
+    <updated>2016-02-21T04:10:48.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0749.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;在此收录一些我比较满意的摄影作品，与 Ins 同步，不定期更新。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0749.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0750.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0751.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_1641.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
@@ -70,7 +72,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0749.JPG&quot; alt=&quot;alt text&quot;&gt;
+      &lt;p&gt;在此收录一些我比较满意的摄影作品，与 Ins 同步，不定期更新。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/picOnINS/IMG_0749.JPG&quot; alt=&quot;alt text&quot;&gt;
     
     </summary>
     
@@ -84,7 +87,7 @@
     <link href="http://yoursite.com/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/"/>
     <id>http://yoursite.com/2016/02/17/post习惯养成的四点原则/</id>
     <published>2016-02-17T13:45:38.000Z</published>
-    <updated>2016-02-17T13:55:13.000Z</updated>
+    <updated>2016-02-21T04:08:35.000Z</updated>
     
     <content type="html">&lt;p&gt;原文：《How I Became a Morning Person, Learned a New Language, and Read 5x More Books in 2015》&lt;a href=&quot;https://medium.com/life-learning/how-i-became-a-morning-person-learned-a-new-language-and-read-5x-more-books-in-2015-867ed067bb9#.8vfiqfp6d&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我们该如何养成一个好的习惯？本文作者给出的答案是「doing small things every day over a long period.」，也就是将习惯量化到一个较小的量级，这样有助于长期地坚持并最终为你带来积极的结果。作者在2015年里通过每天练习五分钟的法语，目前基础的读写说都没有问题，以及通过每晚阅读一页书，这一年的读书量是之前的5倍。&lt;/p&gt;
@@ -106,6 +109,8 @@
       <category term="电台节目文本" scheme="http://yoursite.com/categories/%E7%94%B5%E5%8F%B0%E8%8A%82%E7%9B%AE%E6%96%87%E6%9C%AC/"/>
     
     
+      <category term="电台" scheme="http://yoursite.com/tags/%E7%94%B5%E5%8F%B0/"/>
+    
   </entry>
   
   <entry>
@@ -113,7 +118,7 @@
     <link href="http://yoursite.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/"/>
     <id>http://yoursite.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/</id>
     <published>2015-12-05T03:17:38.000Z</published>
-    <updated>2016-02-19T02:49:18.000Z</updated>
+    <updated>2016-02-21T04:09:28.000Z</updated>
     
     <content type="html">&lt;p&gt;这是一篇关于在 Swift 下通过 API 获取数据的学习笔记，如有错误纰漏欢迎评论指出，感谢。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;什么是API？&quot;&gt;&lt;a href=&quot;#什么是API？&quot; class=&quot;headerlink&quot; title=&quot;什么是API？&quot;&gt;&lt;/a&gt;什么是API？&lt;/h2&gt;&lt;p&gt;记得刚开始学习iOS开发时就接触过这个字眼，遂 Google 得到以下解释：&lt;/p&gt;
@@ -142,6 +147,8 @@
       <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
     
     
+      <category term="Swift" scheme="http://yoursite.com/tags/Swift/"/>
+    
   </entry>
   
   <entry>
@@ -149,7 +156,7 @@
     <link href="http://yoursite.com/2015/11/04/2015-11-04-%3C%3Cying-yu-mo-fa-shi-%3E%3E-xue-xi-bi-ji/"/>
     <id>http://yoursite.com/2015/11/04/2015-11-04-<<ying-yu-mo-fa-shi->>-xue-xi-bi-ji/</id>
     <published>2015-11-04T12:57:47.000Z</published>
-    <updated>2016-02-18T14:43:11.000Z</updated>
+    <updated>2016-02-21T04:09:10.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1014914/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《英语魔法师之语法俱乐部》&lt;/a&gt;是&lt;a href=&quot;http://baike.baidu.com/link?url=YY6Nzko9s81VbOEUt958j4NU8MDjlvpQiMO5jTNCUozsFoOj7gJufHDC6W4d6Kpk-N0SZh25VJR1z5bUCIeZga&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;旋元佑&lt;/a&gt;老师完成的英语语法书，在豆瓣评分高达9.5，可以说是颇具口碑的一本语法书。作者三番五次地在书中埋汰市面上多数语法书有很多似通非通的「规则」，规则解释不了就叫「例外」，而作者主张好的语法观念多注重理解，无需去背各种各样的规则和例外。该书分为三篇：简单句、复句与合句、简化从句，先从基本简单句型切入，再到将简单句合成成为复合句型，最后到精简复合句的简化从句，层层递进。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是目前为止唯一一本我没有中途放弃的语法书，相比于其他语法书，《英语魔法师》确实相对更容易理解和学习。这本书我已看过两遍（第一遍快速翻阅，第二遍做了书面笔记），但是对于语法和这本语法书还是掌握得非常粗浅，这次看这本书尝试将读书笔记发表在博客上，不同于以往的将笔记完成后再发表，而是每章节一更新。章节学习过后不着急进入下一章节，多观察句型实践知识点，尽量完全理解过后再进入下一章节，同时邀您与我一起学习，在评论中留下反馈，一起探讨语法问题。enjoy！&lt;/p&gt;
@@ -279,6 +286,8 @@ the United Nations
     
       <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
+    
+      <category term="英语" scheme="http://yoursite.com/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
