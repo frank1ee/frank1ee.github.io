@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-18T14:22:28.000Z</updated>
+  <updated>2016-02-21T03:37:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift 下用代码实现渐变色背景</title>
+    <link href="http://yoursite.com/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/"/>
+    <id>http://yoursite.com/2016/02/21/Swift-下用代码实现渐变色背景/</id>
+    <published>2016-02-21T03:35:00.000Z</published>
+    <updated>2016-02-21T03:37:29.000Z</updated>
+    
+    <content type="html">&lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码来实现渐变色的背景，实现过程十分简单：&lt;/p&gt;
+&lt;p&gt;##上代码&lt;/p&gt;
+&lt;p&gt;在需要改变背景的视图控制器的 ViewDidLoad 方法中添加下面的代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//定义渐变的颜色，多色渐变太魔性了，我们就用两种颜色
+let topColor = UIColor(red: (91/255.0), green: (91/255.0), blue: (91/255.0), alpha: 1) 
+let buttomColor = UIColor(red: (24/255.0), green: (24/255.0), blue: (24/255.0), alpha: 1)
+//将颜色和颜色的位置定义在数组内
+let gradientColors: [CGColor] = [topColor.CGColor, buttomColor.CGColor]
+let gradientLocations: [CGFloat] = [0.0, 1.0]
+
+//创建CAGradientLayer实例并设置参数
+let gradientLayer: CAGradientLayer = CAGradientLayer()
+gradientLayer.colors = gradientColors
+gradientLayer.locations = gradientLocations
+
+//设置其frame以及插入view的layer
+gradientLayer.frame = self.view.frame
+self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样就实现了渐变色背景：&lt;/p&gt;
+&lt;center&gt; &lt;img src=&quot;/images/gradientBG/screenShot.png&quot; alt=&quot;alt text&quot;&gt; &lt;/center&gt;
+
+
+&lt;p&gt;##简便复用过程&lt;/p&gt;
+&lt;p&gt;如果多个 View 需要用到渐变，我们可以定义一个 CAGradientLayer 类的类拓展，并拷贝以上代码在此，需要复用时调用即可：&lt;/p&gt;
+&lt;center&gt; &lt;img src=&quot;/images/gradientBG/newFile.png&quot; alt=&quot;alt text&quot;&gt; &lt;/center&gt;
+
+&lt;p&gt;####CAGradientLayer+GradientBG.swift:&lt;br&gt;import UIKit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;extension CAGradientLayer {
+
+func GradientLayer() -&amp;gt; CAGradientLayer {
+
+    let topColor = UIColor(red: (91/255.0), green: (91/255.0), blue: (91/255.0), alpha: 1)
+    let buttomColor = UIColor(red: (24/255.0), green: (24/255.0), blue: (24/255.0), alpha: 1)
+
+    let gradientColors: [CGColor] = [topColor.CGColor, buttomColor.CGColor]
+    let gradientLocations: [CGFloat] = [0.0, 1.0]
+
+    let gradientLayer: CAGradientLayer = CAGradientLayer()
+    gradientLayer.colors = gradientColors
+    gradientLayer.locations = gradientLocations
+
+    return gradientLayer
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;最后在需要改变的视图控制器的 ViewDidLoad 方法中调用该方法即可：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let gradientLayer = CAGradientLayer().GradientLayer()
+    gradientLayer.frame = self.view.frame
+    self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+
+    // Do any additional setup after loading the view.
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;正在着手开始做自己的第一个 App，需要渐变色的背景，一开始偷懒用 Sketch 绘制导出的 PDF 直接放 Xcode 工程里在 imgeView 里用，但是通过图片直接用作背景会发现在真机上运行时背景会有纹路，影响观感，又考虑到后期对于屏幕的适配可能会留坑，遂寻求用代码
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Pics on my Instagram</title>
