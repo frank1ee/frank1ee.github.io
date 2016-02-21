@@ -4,9 +4,9 @@
   <subtitle>记录自己的学习与见闻。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://frank1ee.github.io/"/>
   <updated>2016-02-21T03:49:40.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://frank1ee.github.io/</id>
   
   <author>
     <name>Frank Lee</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Swift 下用代码实现渐变色背景</title>
-    <link href="http://yoursite.com/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/"/>
-    <id>http://yoursite.com/2016/02/21/Swift-下用代码实现渐变色背景/</id>
+    <link href="http://frank1ee.github.io/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/"/>
+    <id>http://frank1ee.github.io/2016/02/21/Swift-下用代码实现渐变色背景/</id>
     <published>2016-02-21T03:35:00.000Z</published>
     <updated>2016-02-21T03:49:40.000Z</updated>
     
@@ -43,17 +43,17 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="iOS" scheme="http://frank1ee.github.io/categories/iOS/"/>
     
     
-      <category term="Swift" scheme="http://yoursite.com/tags/Swift/"/>
+      <category term="Swift" scheme="http://frank1ee.github.io/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>Pics on my Instagram</title>
-    <link href="http://yoursite.com/2016/02/18/Pics-on-my-Instagram/"/>
-    <id>http://yoursite.com/2016/02/18/Pics-on-my-Instagram/</id>
+    <link href="http://frank1ee.github.io/2016/02/18/Pics-on-my-Instagram/"/>
+    <id>http://frank1ee.github.io/2016/02/18/Pics-on-my-Instagram/</id>
     <published>2016-02-18T02:49:36.000Z</published>
     <updated>2016-02-21T04:10:48.000Z</updated>
     
@@ -77,15 +77,15 @@
     
     </summary>
     
-      <category term="摄影" scheme="http://yoursite.com/categories/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="http://frank1ee.github.io/categories/%E6%91%84%E5%BD%B1/"/>
     
     
   </entry>
   
   <entry>
     <title>习惯养成的四点原则</title>
-    <link href="http://yoursite.com/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/"/>
-    <id>http://yoursite.com/2016/02/17/post习惯养成的四点原则/</id>
+    <link href="http://frank1ee.github.io/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/"/>
+    <id>http://frank1ee.github.io/2016/02/17/post习惯养成的四点原则/</id>
     <published>2016-02-17T13:45:38.000Z</published>
     <updated>2016-02-21T04:08:35.000Z</updated>
     
@@ -106,17 +106,17 @@
     
     </summary>
     
-      <category term="电台节目文本" scheme="http://yoursite.com/categories/%E7%94%B5%E5%8F%B0%E8%8A%82%E7%9B%AE%E6%96%87%E6%9C%AC/"/>
+      <category term="电台节目文本" scheme="http://frank1ee.github.io/categories/%E7%94%B5%E5%8F%B0%E8%8A%82%E7%9B%AE%E6%96%87%E6%9C%AC/"/>
     
     
-      <category term="电台" scheme="http://yoursite.com/tags/%E7%94%B5%E5%8F%B0/"/>
+      <category term="电台" scheme="http://frank1ee.github.io/tags/%E7%94%B5%E5%8F%B0/"/>
     
   </entry>
   
   <entry>
     <title>在 Swift 中使用 API（JSON、NSData）</title>
-    <link href="http://yoursite.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/"/>
-    <id>http://yoursite.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/</id>
+    <link href="http://frank1ee.github.io/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/"/>
+    <id>http://frank1ee.github.io/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api(json,-nsdata)/</id>
     <published>2015-12-05T03:17:38.000Z</published>
     <updated>2016-02-21T04:09:28.000Z</updated>
     
@@ -144,17 +144,17 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="iOS" scheme="http://frank1ee.github.io/categories/iOS/"/>
     
     
-      <category term="Swift" scheme="http://yoursite.com/tags/Swift/"/>
+      <category term="Swift" scheme="http://frank1ee.github.io/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>《英语魔法师》学习笔记（续更）</title>
-    <link href="http://yoursite.com/2015/11/04/2015-11-04-%3C%3Cying-yu-mo-fa-shi-%3E%3E-xue-xi-bi-ji/"/>
-    <id>http://yoursite.com/2015/11/04/2015-11-04-<<ying-yu-mo-fa-shi->>-xue-xi-bi-ji/</id>
+    <link href="http://frank1ee.github.io/2015/11/04/2015-11-04-%3C%3Cying-yu-mo-fa-shi-%3E%3E-xue-xi-bi-ji/"/>
+    <id>http://frank1ee.github.io/2015/11/04/2015-11-04-<<ying-yu-mo-fa-shi->>-xue-xi-bi-ji/</id>
     <published>2015-11-04T12:57:47.000Z</published>
     <updated>2016-02-21T04:09:10.000Z</updated>
     
@@ -284,17 +284,17 @@ the United Nations
     
     </summary>
     
-      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://frank1ee.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="英语" scheme="http://yoursite.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+      <category term="英语" scheme="http://frank1ee.github.io/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>我在听的那些 podcast</title>
-    <link href="http://yoursite.com/2015/10/27/2015-10-27-wo-zai-ting-de-na-xie-podcast/"/>
-    <id>http://yoursite.com/2015/10/27/2015-10-27-wo-zai-ting-de-na-xie-podcast/</id>
+    <link href="http://frank1ee.github.io/2015/10/27/2015-10-27-wo-zai-ting-de-na-xie-podcast/"/>
+    <id>http://frank1ee.github.io/2015/10/27/2015-10-27-wo-zai-ting-de-na-xie-podcast/</id>
     <published>2015-10-27T08:06:18.000Z</published>
     <updated>2016-02-18T15:06:36.000Z</updated>
     
@@ -337,15 +337,15 @@ the United Nations
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://frank1ee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>九寨游记</title>
-    <link href="http://yoursite.com/2015/10/13/2015-10-13-ji-jiu-zhai-cheng-du-xing/"/>
-    <id>http://yoursite.com/2015/10/13/2015-10-13-ji-jiu-zhai-cheng-du-xing/</id>
+    <link href="http://frank1ee.github.io/2015/10/13/2015-10-13-ji-jiu-zhai-cheng-du-xing/"/>
+    <id>http://frank1ee.github.io/2015/10/13/2015-10-13-ji-jiu-zhai-cheng-du-xing/</id>
     <published>2015-10-13T08:50:31.000Z</published>
     <updated>2016-02-20T00:38:38.000Z</updated>
     
@@ -418,15 +418,15 @@ the United Nations
     
     </summary>
     
-      <category term="游记" scheme="http://yoursite.com/categories/%E6%B8%B8%E8%AE%B0/"/>
+      <category term="游记" scheme="http://frank1ee.github.io/categories/%E6%B8%B8%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Hacking with Swift 学习笔记</title>
-    <link href="http://yoursite.com/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/"/>
-    <id>http://yoursite.com/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</id>
+    <link href="http://frank1ee.github.io/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/"/>
+    <id>http://frank1ee.github.io/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</id>
     <published>2015-09-13T09:06:01.000Z</published>
     <updated>2016-02-18T14:41:31.000Z</updated>
     
@@ -678,15 +678,15 @@ the United Nations
     
     </summary>
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="iOS" scheme="http://frank1ee.github.io/categories/iOS/"/>
     
     
   </entry>
   
   <entry>
     <title>写在开学前</title>
-    <link href="http://yoursite.com/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/"/>
-    <id>http://yoursite.com/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/</id>
+    <link href="http://frank1ee.github.io/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/"/>
+    <id>http://frank1ee.github.io/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/</id>
     <published>2015-09-06T14:03:27.000Z</published>
     <updated>2016-02-17T10:50:40.000Z</updated>
     
@@ -716,15 +716,15 @@ the United Nations
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://frank1ee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello world</title>
-    <link href="http://yoursite.com/2015/09/01/2015-09-01-hello-world/"/>
-    <id>http://yoursite.com/2015/09/01/2015-09-01-hello-world/</id>
+    <link href="http://frank1ee.github.io/2015/09/01/2015-09-01-hello-world/"/>
+    <id>http://frank1ee.github.io/2015/09/01/2015-09-01-hello-world/</id>
     <published>2015-09-01T01:03:17.000Z</published>
     <updated>2016-02-17T10:50:26.000Z</updated>
     
@@ -749,7 +749,7 @@ the United Nations
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://frank1ee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
