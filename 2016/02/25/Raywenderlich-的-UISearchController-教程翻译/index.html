@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Raywenderlich 的 UISearchController 教程翻译 | Frank1ee</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Frank1ee">
+    <meta name="author" content="Frank Lee">
+    <meta name="description" content="记录自己的学习与见闻。" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Frank1ee" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="atom.xml">
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/iOS/" class="animsition-link">iOS<small>(4)</small></a></li>
+				    
+				    <li><a href="/categories/摄影/" class="animsition-link">摄影<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/游记/" class="animsition-link">游记<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/电台节目文本/" class="animsition-link">电台节目文本<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/读书笔记/" class="animsition-link">读书笔记<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/随笔/" class="animsition-link">随笔<small>(3)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://music.163.com/#/djradio?id=1631001" class="animsition-link">我的电台「荐文·见闻」</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Frank1ee</a></li>
+                            <li class="nolink"><span>Always be a learner.</span></li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/2Frannk" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/ifalanke" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/42764168" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2></h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p></p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-02-25T02:53:34.000Z" itemprop="datePublished">
+          2016-02-25
+      </time>
+    
+    
+    | 
+    <a href='/tags/翻译-Swift/'>翻译,Swift</a>
+    
+    
+</span>
+                <h1>Raywenderlich 的 UISearchController 教程翻译</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="Raywenderlich-的-UISearchController-教程翻译"><a href="#Raywenderlich-的-UISearchController-教程翻译" class="headerlink" title="Raywenderlich 的 UISearchController 教程翻译"></a>Raywenderlich 的 UISearchController 教程翻译</h1><p>如果你的 app 需要展示大量的数据，滚屏将会造成卡顿甚至崩溃。在这种情况下，允许用户搜索指定的特定的项目显得十分重要。幸运的是，UIKit 包含的 UISearchBar 完美结合了 UITableView 使你可以快速地筛选过滤内容。</p>
+<p>在这个教程中你将会创建一个基于 tableView，可根据种类搜索糖果的 app。得益于 iOS 8 带来的 UISearchController，你将为tableView 加入搜索功能，包括动态地筛选内容，以及添加可选范围的选项（optional scope bar）。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>在 <a href="http://cdn3.raywenderlich.com/wp-content/uploads/2015/09/CandySearch-Starter.zip" target="_blank" rel="external">这里</a> 下载已经初步配置好的项目，构建并运行你将会看到一个空白的列表：</p>
+<center> <img src="/images/searchController/1.png" alt="alt text"> </center>
+
+<p>返回 Xcode，Candy.swfit 包含了一个储存着所需要展示信息的类，其包含了两个属性，分别是糖果的 category 和 name。</p>
+<p>当用户在这个 app 中搜索糖果时，你将引用到 name 这个属性与之匹配，后面用到 Scope Bar 时将会用到 category 这个属性。</p>
+<h2 id="为TableView-部署内容"><a href="#为TableView-部署内容" class="headerlink" title="为TableView 部署内容"></a>为TableView 部署内容</h2><p>打开 <code>MasterViewController.swift</code>，变量 <strong>candies</strong> 将会用来存储所有的 Candy 对象可供用户搜索，让我们来创建一些糖果！</p>
+<p>在这个教程中只要创建少量的数据让我们了解 search bar 是如何工作的，而一个产品很有可能会有成千上万的数据可供搜索，但原理是相同的。</p>
+<p>在 viewDidLoad() 中添加如下代码创建 Candy 对象来填充数组：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">candies = [</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Chocolate"</span>, name:<span class="string">"Chocolate Bar"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Chocolate"</span>, name:<span class="string">"Chocolate Chip"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Chocolate"</span>, name:<span class="string">"Dark Chocolate"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Hard"</span>, name:<span class="string">"Lollipop"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Hard"</span>, name:<span class="string">"Candy Cane"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Hard"</span>, name:<span class="string">"Jaw Breaker"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Other"</span>, name:<span class="string">"Caramel"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Other"</span>, name:<span class="string">"Sour Chew"</span>),</span><br><span class="line">  <span class="type">Candy</span>(category:<span class="string">"Other"</span>, name:<span class="string">"Gummi Bear"</span>)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>因为项目已经配置好了 tableView 的 delegate 和 datasource 方法，所以现在编译运行程序就能看到数据展示在列表上了：</p>
+<center> <img src="/images/searchController/2.png" alt="alt text"> </center>
+
+<p>同时，选中某一行将会展示相应糖果的 detailView：</p>
+<center> <img src="/images/searchController/3.png" alt="alt text"> </center>
+
+<h2 id="UISearchController"><a href="#UISearchController" class="headerlink" title="UISearchController"></a>UISearchController</h2><p>如果你看过 UISearchController 的官方文档会发现这个类「有点懒」，它并不提供搜索的具体实现，它与 delegate 通过协议来获悉用户的动作，你需要自己写所有实现数据匹配的功能。</p>
+<p>尽管这看起来有点吓人，但是自定义实现搜索功能使我们能够更好的掌控搜索结果的返回从而提高搜索性能，提升用户体验。</p>
+<p>UISearchDisplayController 类从 iOS8 开始被废除，转而使用 UISearchController。遗憾的是，目前 Interface Builder 还不支持 UISearchController，所以你需要用代码实现 UI。</p>
+<p>在 MasterViewController.swift 加入一个新属性：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> searchController = <span class="type">UISearchController</span>(searchResultsController: <span class="literal">nil</span>)</span><br></pre></td></tr></table></figure>
+<p>初始化 UISearchController 时传入 nil 意味着我们希望在同一个视图显示搜索结果，如果传入另一个 viewController 则是在那展示结果。</p>
+<p>接下来，你需要要为 searchController 对象设置几个参数，在MasterViewController.swfit 的 viewDidLoad() 中添加如下代码：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">searchController.searchResultsUpdater = <span class="keyword">self</span></span><br><span class="line">searchController.dimsBackgroundDuringPresentation = <span class="literal">false</span></span><br><span class="line">definesPresentationContext = <span class="literal">true</span></span><br><span class="line">tableView.tableHeaderView = searchController.searchBar</span><br></pre></td></tr></table></figure>
+<p>概述以上代码：</p>
+<ol>
+<li><p>searchResultsUpdater 是 UISearchController 的一个属性，遵循UISearchResultsUpdating 协议，这样就能够监听 UISearchBar 内文本的改变。</p>
+</li>
+<li><p>默认下 UISearchController 会使视图变暗（不可操作），如果要使用其他视图来作为 searchResultController 可以将 dimsBackgroundDuringPresentation 这个值设为 true（变暗）。在本例中，我们需要当前视图作为 searchReslultsUpdater，所以将这个值设为 false，这样就能在当前视图看到搜索结果并响应点击。</p>
+</li>
+<li><p>将 definesPresentationContext 设为 true ，意味着当用户导航到其他视图控制器时正在输入的 searchBar 将会消失而非保留在画面上。</p>
+</li>
+<li><p>最后，将 searchBar 加入到 tableView 的 tableHeaderView 中。</p>
+</li>
+</ol>
+<h2 id="搜索结果的更新与筛选"><a href="#搜索结果的更新与筛选" class="headerlink" title="搜索结果的更新与筛选"></a>搜索结果的更新与筛选</h2><p>接下来，在 MasterViewController 中创建一个变量：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> filteredCandies = [<span class="type">Candy</span>]()</span><br></pre></td></tr></table></figure>
+<p>这个属性用来保存筛选后的数据，接着添加如下方法：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">filterContentForSearchText</span><span class="params">(searchText: String, scope: String = <span class="string">"All"</span>)</span></span> &#123;</span><br><span class="line">  filteredCandies = candies.<span class="built_in">filter</span> &#123; candy <span class="keyword">in</span></span><br><span class="line">    <span class="keyword">return</span> candy.name.lowercaseString.containsString(searchText.lowercaseString)</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  tableView.reloadData()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个方法根据 searchText 筛选 candies 数组中的数据并返回给 filteredCandies，先不管 scope 参数，后面会用到。filter() 带有一个闭包(candy: Candy) -&gt; Bool ，该方法会遍历数组的所有对象，闭包中调用 containsString 判断文本是否有包含用户输入的内容，并返回一个 bool 值。在这里，我们将文本都通过 lowercaseString 转为小写字母来对比。</p>
+<p>注：大多时候用户并不在意搜索结果的大小写区分，所以在这里统一转为小写对比。</p>
+<p>想让视图控制器响应 searchBar 就需要遵循 UISearchResultsUpdating，为MasterViewController.swift 添加如下类扩展:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">MasterViewController</span>: <span class="title">UISearchResultsUpdating</span> </span>&#123;</span><br><span class="line">  <span class="func"><span class="keyword">func</span> <span class="title">updateSearchResultsForSearchController</span><span class="params">(searchController: UISearchController)</span></span> &#123;</span><br><span class="line">    filterContentForSearchText(searchController.searchBar.text!)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>该方法是这个协议中唯一一个必须实现的。<br><em>（译者注：这里作者将协议的遵循和方法实现写在类扩展里应该是风格问题，使更清晰简洁，可以参考<a href="https://www.bignerdranch.com/blog/protocols-part-3-adopting-protocols-in-class-extensions-bork/" target="_blank" rel="external">这篇文章</a>。）</em></p>
+<p>现在，当用户在 searchBar 输入时文本的增减都会通知 MasterViewController ，方法中调用了我们刚刚实现的方法（传入searchBar中输入的文本并筛选结果）。</p>
+<p>现在编译运行程序，你会看到 tableView 上方有一个 searchBar，但是现在还无法响应搜索匹配的结果，因为还没将匹配后的结果 filteredCandies 呈现给 tableView。</p>
+<p> 在 tableView(:numberOfRowsInSection:) 方法中修改如下：</p>
+ <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(tableView: UITableView, numberOfRowsInSection section: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> searchController.active &amp;&amp; searchController.searchBar.text != <span class="string">""</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> filteredCandies.<span class="built_in">count</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> candies.<span class="built_in">count</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>判断用户是否在搜索和 searchBar 是否有内容输入，返回不同的值。</p>
+<p>同时，修改  tableView(:cellForRowAtIndexPath:)  方法为：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">tableView</span><span class="params">(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)</span></span> -&gt; <span class="type">UITableViewCell</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> cell = tableView.dequeueReusableCellWithIdentifier(<span class="string">"Cell"</span>, forIndexPath: indexPath)</span><br><span class="line">  <span class="keyword">let</span> candy: <span class="type">Candy</span></span><br><span class="line">  <span class="keyword">if</span> searchController.active &amp;&amp; searchController.searchBar.text != <span class="string">""</span> &#123;</span><br><span class="line">    candy = filteredCandies[indexPath.row]</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    candy = candies[indexPath.row]</span><br><span class="line">  &#125;</span><br><span class="line">  cell.textLabel?.text = candy.name</span><br><span class="line">  cell.detailTextLabel?.text = candy.category</span><br><span class="line">  <span class="keyword">return</span> cell</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同理，判断并使用不同的数据展示在 tableView 中。search controller 会自动处理搜索结果的显示与隐藏，我们要做的仅仅是提供我们需要展示的数据。</p>
+<center> <img src="/images/searchController/4.png" alt="alt text"> </center>
+
+<p>现在运行 App ，已经可以显示筛选后的数据了！但是现在还有个问题，当你选择某一行结果时，detailView 显示的糖果有可能并不匹配，下面我们来修复它。</p>
+<h2 id="将数据传递给-detail-View"><a href="#将数据传递给-detail-View" class="headerlink" title="将数据传递给 detail View"></a>将数据传递给 detail View</h2><p>当把内容传递给 detail ViewController 的时候必须判断是搜索结果数组还是原数组，这样才能完美匹配，在 prepareForSegue 方法中修改代码:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> candy = candies[indexPath.row]</span><br></pre></td></tr></table></figure>
+<p>将这句代码替换为：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> candy: <span class="type">Candy</span></span><br><span class="line"><span class="keyword">if</span> searchController.active &amp;&amp; searchController.searchBar.text != <span class="string">""</span> &#123;</span><br><span class="line">  candy = filteredCandies[indexPath.row]</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  candy = candies[indexPath.row]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<center> <img src="/images/searchController/5.png" alt="alt text"> </center>
+
+<p>现在运行 app 已经可以正确地传递数据至 detailView。</p>
+<h2 id="创建-scope-bar-分类筛选搜索结果"><a href="#创建-scope-bar-分类筛选搜索结果" class="headerlink" title="创建 scope bar 分类筛选搜索结果"></a>创建 scope bar 分类筛选搜索结果</h2><p>你可以为 search bar 添加一个 scope bar 供用户选择并筛选内容，本例将根据糖果的类型进行筛选，在实例化 Candy 对象时我们已经为它们赋上了相应的 category : Chocolate,Hard and Other 。</p>
+<p>首先要在创建一个 scope bar（一个 segmented control 控件）我们需要实现另一个协议方法，在 MasterViewController.swift 添加类扩展：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">MasterViewController</span>: <span class="title">UISearchBarDelegate</span> </span>&#123;</span><br><span class="line">  <span class="func"><span class="keyword">func</span> <span class="title">searchBar</span><span class="params">(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)</span></span> &#123;</span><br><span class="line">    filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当用户切换 scope 时，会调用该方法，这时候我们要重新筛选结果，所以这时候调用之前定义过的 filterContentForSearchText 方法，并传入 scope 参数。</p>
+<p>修改 filterContentForSearchText() 方法为：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">filterContentForSearchText</span><span class="params">(searchText: String, scope: String = <span class="string">"All"</span>)</span></span> &#123;</span><br><span class="line">  filteredCandies = candies.<span class="built_in">filter</span> &#123; candy <span class="keyword">in</span></span><br><span class="line">    <span class="keyword">let</span> categoryMatch = (scope == <span class="string">"All"</span>) || (candy.category == scope)</span><br><span class="line">    <span class="keyword">return</span>  categoryMatch &amp;&amp; candy.name.lowercaseString.containsString(searchText.lowercaseString)</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  tableView.reloadData()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里我们遍历 candies 内的 每一个candy 对象，通过「逻辑或符号」判断 scope 是否被设为「All」或者 candy 的种类是否与所选的 scope 匹配，赋值 categoryMatch，接着通过「逻辑与符号」判断这个 candy 是否应该被加入filteredCandies 数组。</p>
+<p>修改 updateSearchResultsForSearchController 方法，传入 scope：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">updateSearchResultsForSearchController</span><span class="params">(searchController: UISearchController)</span></span> &#123;</span><br><span class="line">  <span class="keyword">let</span> searchBar = searchController.searchBar</span><br><span class="line">  <span class="keyword">let</span> scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]</span><br><span class="line">  filterContentForSearchText(searchController.searchBar.text!, scope: scope)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后，还需要在 ViewDidLoad() 中实现添加以下代码，添加 scope bar：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">searchController.searchBar.scopeButtonTitles = [<span class="string">"All"</span>, <span class="string">"Chocolate"</span>, <span class="string">"Hard"</span>, <span class="string">"Other"</span>]</span><br><span class="line">searchController.searchBar.delegate = <span class="keyword">self</span></span><br></pre></td></tr></table></figure>
+<p>现在运行 app，可以通过 scope 筛选内容了，<a href="http://cdn4.raywenderlich.com/wp-content/uploads/2015/09/CandySearch.zip" target="_blank" rel="external">点这里</a>可以下载完整的项目源码。TableView 在 app 中广泛使用，而添加搜索选项无疑增加了易用性与用户体验。</p>
+<center> <img src="/images/searchController/6.png" alt="alt text"> </center>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/02/21/船厂/">
+        船厂 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/02/25/Raywenderlich-的-UISearchController-教程翻译/" data-title="Raywenderlich 的 UISearchController 教程翻译" data-url="http://frank1ee.github.io/2016/02/25/Raywenderlich-的-UISearchController-教程翻译/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"frank1ee"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Frank Lee. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/2Frannk" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/ifalanke" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/42764168" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
