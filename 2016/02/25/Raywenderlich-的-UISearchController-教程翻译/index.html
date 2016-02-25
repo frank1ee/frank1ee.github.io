@@ -246,7 +246,10 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="Raywenderlich-的-UISearchController-教程翻译"><a href="#Raywenderlich-的-UISearchController-教程翻译" class="headerlink" title="Raywenderlich 的 UISearchController 教程翻译"></a>Raywenderlich 的 UISearchController 教程翻译</h1><p>如果你的 app 需要展示大量的数据，滚屏将会造成卡顿甚至崩溃。在这种情况下，允许用户搜索指定的特定的项目显得十分重要。幸运的是，UIKit 包含的 UISearchBar 完美结合了 UITableView 使你可以快速地筛选过滤内容。</p>
+      		<blockquote>
+<p>原文链接：<a href="http://www.raywenderlich.com/113772/uisearchcontroller-tutorial，为便于理解有做一些删减和结构上的改动。" target="_blank" rel="external">http://www.raywenderlich.com/113772/uisearchcontroller-tutorial，为便于理解有做一些删减和结构上的改动。</a></p>
+</blockquote>
+<p>如果你的 app 需要展示大量的数据，滚屏将会造成卡顿甚至崩溃。在这种情况下，允许用户搜索指定的特定的项目显得十分重要。幸运的是，UIKit 包含的 UISearchBar 完美结合了 UITableView 使你可以快速地筛选过滤内容。</p>
 <p>在这个教程中你将会创建一个基于 tableView，可根据种类搜索糖果的 app。得益于 iOS 8 带来的 UISearchController，你将为tableView 加入搜索功能，包括动态地筛选内容，以及添加可选范围的选项（optional scope bar）。</p>
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>在 <a href="http://cdn3.raywenderlich.com/wp-content/uploads/2015/09/CandySearch-Starter.zip" target="_blank" rel="external">这里</a> 下载已经初步配置好的项目，构建并运行你将会看到一个空白的列表：</p>
 <center> <img src="/images/searchController/1.png" alt="alt text"> </center>
@@ -290,7 +293,7 @@
 <p>注：大多时候用户并不在意搜索结果的大小写区分，所以在这里统一转为小写对比。</p>
 <p>想让视图控制器响应 searchBar 就需要遵循 UISearchResultsUpdating，为MasterViewController.swift 添加如下类扩展:</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">MasterViewController</span>: <span class="title">UISearchResultsUpdating</span> </span>&#123;</span><br><span class="line">  <span class="func"><span class="keyword">func</span> <span class="title">updateSearchResultsForSearchController</span><span class="params">(searchController: UISearchController)</span></span> &#123;</span><br><span class="line">    filterContentForSearchText(searchController.searchBar.text!)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>该方法是这个协议中唯一一个必须实现的。<br><em>（译者注：这里作者将协议的遵循和方法实现写在类扩展里应该是风格问题，使更清晰简洁，可以参考<a href="https://www.bignerdranch.com/blog/protocols-part-3-adopting-protocols-in-class-extensions-bork/" target="_blank" rel="external">这篇文章</a>。）</em></p>
+<p>该方法是这个协议中唯一一个必须实现的。<br><em>（译者注：这里作者将协议的遵循和方法实现写在类扩展里应该是风格问题，让类的结构更简洁明了，可以参考<a href="https://www.bignerdranch.com/blog/protocols-part-3-adopting-protocols-in-class-extensions-bork/" target="_blank" rel="external">这篇文章</a>。）</em></p>
 <p>现在，当用户在 searchBar 输入时文本的增减都会通知 MasterViewController ，方法中调用了我们刚刚实现的方法（传入searchBar中输入的文本并筛选结果）。</p>
 <p>现在编译运行程序，你会看到 tableView 上方有一个 searchBar，但是现在还无法响应搜索匹配的结果，因为还没将匹配后的结果 filteredCandies 呈现给 tableView。</p>
 <p> 在 tableView(:numberOfRowsInSection:) 方法中修改如下：</p>
@@ -320,8 +323,9 @@
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">updateSearchResultsForSearchController</span><span class="params">(searchController: UISearchController)</span></span> &#123;</span><br><span class="line">  <span class="keyword">let</span> searchBar = searchController.searchBar</span><br><span class="line">  <span class="keyword">let</span> scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]</span><br><span class="line">  filterContentForSearchText(searchController.searchBar.text!, scope: scope)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>最后，还需要在 ViewDidLoad() 中实现添加以下代码，添加 scope bar：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">searchController.searchBar.scopeButtonTitles = [<span class="string">"All"</span>, <span class="string">"Chocolate"</span>, <span class="string">"Hard"</span>, <span class="string">"Other"</span>]</span><br><span class="line">searchController.searchBar.delegate = <span class="keyword">self</span></span><br></pre></td></tr></table></figure>
-<p>现在运行 app，可以通过 scope 筛选内容了，<a href="http://cdn4.raywenderlich.com/wp-content/uploads/2015/09/CandySearch.zip" target="_blank" rel="external">点这里</a>可以下载完整的项目源码。TableView 在 app 中广泛使用，而添加搜索选项无疑增加了易用性与用户体验。</p>
 <center> <img src="/images/searchController/6.png" alt="alt text"> </center>
+
+<p>现在运行 app，可以通过 scope 筛选内容了，<a href="http://cdn4.raywenderlich.com/wp-content/uploads/2015/09/CandySearch.zip" target="_blank" rel="external">点这里</a>可以下载完整的项目源码。TableView 在 app 中广泛使用，而添加搜索选项无疑增加了易用性与用户体验。</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
