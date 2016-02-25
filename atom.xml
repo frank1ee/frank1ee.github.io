@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://frank1ee.github.io/"/>
-  <updated>2016-02-25T03:22:09.000Z</updated>
+  <updated>2016-02-25T03:32:52.000Z</updated>
   <id>http://frank1ee.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://frank1ee.github.io/2016/02/25/Raywenderlich-%E7%9A%84-UISearchController-%E6%95%99%E7%A8%8B%E7%BF%BB%E8%AF%91/"/>
     <id>http://frank1ee.github.io/2016/02/25/Raywenderlich-的-UISearchController-教程翻译/</id>
     <published>2016-02-25T02:53:34.000Z</published>
-    <updated>2016-02-25T03:22:09.000Z</updated>
+    <updated>2016-02-25T03:32:52.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;
-&lt;p&gt;原文链接：&lt;a href=&quot;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial，为便于理解有做一些删减和结构上的改动。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial，为便于理解有做一些删减和结构上的改动。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文链接：&lt;a href=&quot;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial&lt;/a&gt;&lt;br&gt;为便于理解本文有做一些删减和结构上的改动。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如果你的 app 需要展示大量的数据，滚屏将会造成卡顿甚至崩溃。在这种情况下，允许用户搜索指定的特定的项目显得十分重要。幸运的是，UIKit 包含的 UISearchBar 完美结合了 UITableView 使你可以快速地筛选过滤内容。&lt;/p&gt;
 &lt;p&gt;在这个教程中你将会创建一个基于 tableView，可根据种类搜索糖果的 app。得益于 iOS 8 带来的 UISearchController，你将为tableView 加入搜索功能，包括动态地筛选内容，以及添加可选范围的选项（optional scope bar）。&lt;/p&gt;
@@ -107,7 +107,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;原文链接：&lt;a href=&quot;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial，为便于理解有做一些删减和结构上的改动。&quot; target=&quot;_blank&quot; rel=&quot;exte
+&lt;p&gt;原文链接：&lt;a href=&quot;http://www.raywenderlich.com/113772/uisearchcontroller-tutorial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ray
     
     </summary>
     
