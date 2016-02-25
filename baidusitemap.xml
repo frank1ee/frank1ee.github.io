@@ -4,11 +4,47 @@
 
     
   <url>
-    <loc>http://frank1ee.github.io/2016/02/25/Raywenderlich-%E7%9A%84-UISearchController-%E6%95%99%E7%A8%8B%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2016-02-25T03:32:52.000Z</lastmod>
+    <loc>http://frank1ee.github.io/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/</loc>
+    <lastmod>2016-02-25T12:47:14.000Z</lastmod>
     <data>
         <display>
-        <title>Raywenderlich 的 UISearchController 教程翻译</title>
+        <title>写在开学前</title>
+        <pubTime>2015-09-06T14:03:27.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="随笔" url="http://frank1ee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://frank1ee.github.io/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</loc>
+    <lastmod>2016-02-25T12:46:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>Swift 语法入门学习笔记</title>
+        <pubTime>2015-09-13T09:06:01.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="iOS" url="http://frank1ee.github.io/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://frank1ee.github.io/2016/02/25/Raywenderlich-%E7%9A%84-UISearchController-%E6%95%99%E7%A8%8B%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2016-02-25T12:44:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>Swift 下 UISearchController 的使用</title>
         <pubTime>2016-02-25T02:53:34.000Z</pubTime>
         
         <tag>翻译,Swift</tag>
@@ -167,42 +203,6 @@
         <display>
         <title>我在听的那些 podcast</title>
         <pubTime>2015-10-27T08:06:18.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="随笔" url="http://frank1ee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://frank1ee.github.io/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</loc>
-    <lastmod>2016-02-18T14:41:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hacking with Swift 学习笔记</title>
-        <pubTime>2015-09-13T09:06:01.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="iOS" url="http://frank1ee.github.io/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://frank1ee.github.io/2015/09/06/2015-09-06-xie-zai-kai-xue-qian/</loc>
-    <lastmod>2016-02-17T10:50:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>写在开学前</title>
-        <pubTime>2015-09-06T14:03:27.000Z</pubTime>
         
          
            
