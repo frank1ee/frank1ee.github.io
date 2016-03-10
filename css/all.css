@@ -163,7 +163,7 @@ body {
 	color: #666;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 30px;
 	padding: 0px 0px;
 }
@@ -172,7 +172,7 @@ p {
 	color: #666;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 16px;
 	line-height: 30px;
 }
 i {
@@ -198,26 +198,26 @@ h2 {
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 23px;
 	line-height: 30px;
 	letter-spacing: 1px;
 }
 @media (max-width:768px) {
 	h2 {
-		font-size: 22px;
+		font-size: 23px;
 	}
 }
 h3 {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 37px;
-	font-size: 20px;
+	font-size: 21px;
 	margin-top: 0;
 }
 h4 {
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 19px;
 	line-height: 30px;
 	color: #333333;
 }
