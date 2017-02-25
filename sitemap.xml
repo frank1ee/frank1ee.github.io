@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://fuhanlee.com/about.html</loc>
+    
+    <lastmod>2017-02-25T15:05:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://fuhanlee.com/2017/01/15/zixue/</loc>
     
     <lastmod>2017-01-15T05:39:57.000Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://fuhanlee.com/2016/11/14/backonthetrack/</loc>
     
     <lastmod>2016-11-14T05:13:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fuhanlee.com/about.html</loc>
-    
-    <lastmod>2016-11-14T05:08:44.000Z</lastmod>
     
   </url>
   
