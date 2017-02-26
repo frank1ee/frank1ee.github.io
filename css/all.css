@@ -163,7 +163,7 @@ body {
 	color: #666;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 30px;
 	padding: 0px 0px;
 }
@@ -172,7 +172,7 @@ p {
 	color: #666;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 30px;
 }
 i {
@@ -198,26 +198,26 @@ h2 {
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 23px;
+	font-size: 22px;
 	line-height: 30px;
 	letter-spacing: 1px;
 }
 @media (max-width:768px) {
 	h2 {
-		font-size: 23px;
+		font-size: 22px;
 	}
 }
 h3 {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 37px;
-	font-size: 21px;
+	font-size: 20px;
 	margin-top: 0;
 }
 h4 {
 	font-style: normal;
 	font-weight: 400;
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 30px;
 	color: #333333;
 }
@@ -3430,12 +3430,6 @@ footer .footer_bottom {
 }
 #intro .col-md-8.col-md-offset-2 img {
 	max-width: 100%;
-}
-#intro .col-md-8.col-md-offset-2 a {
-  color: #0275d8;
-}
-#intro .col-md-8.col-md-offset-2 a:hover {
-  color: #2C4A77;
 }
 /* Import the font file with the icons in it */
 @font-face { font-family: 'icons'; src:  url('../fonts/icons.woff') format('woff'); font-weight: normal; font-style: normal; }
