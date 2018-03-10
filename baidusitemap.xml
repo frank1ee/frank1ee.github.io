@@ -4,12 +4,110 @@
 
     
   <url>
-    <loc>http://fuhanlee.com/2018/03/10/askRightQuestionInResearch/</loc>
-    <lastmod>2018-03-10T13:28:57.588Z</lastmod>
+    <loc>http://fuhanlee.com/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</loc>
+    <lastmod>2018-03-10T13:36:56.999Z</lastmod>
+    <data>
+        <display>
+        <title>Swift 语法入门学习笔记</title>
+        <pubTime>2015-09-13T09:06:01.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="iOS 开发" url="http://fuhanlee.com/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fuhanlee.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api-json-nsdata/</loc>
+    <lastmod>2018-03-10T13:36:40.608Z</lastmod>
+    <data>
+        <display>
+        <title>在 Swift 中使用 API（JSON、NSData）</title>
+        <pubTime>2015-12-05T03:17:38.000Z</pubTime>
+        
+        <tag>Swift</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS 开发" url="http://fuhanlee.com/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fuhanlee.com/2016/02/25/Raywenderlich-%E7%9A%84-UISearchController-%E6%95%99%E7%A8%8B%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2018-03-10T13:36:32.424Z</lastmod>
+    <data>
+        <display>
+        <title>Swift 下 UISearchController 的使用</title>
+        <pubTime>2016-02-25T02:53:34.000Z</pubTime>
+        
+        <tag>翻译,Swift</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS 开发" url="http://fuhanlee.com/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fuhanlee.com/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/</loc>
+    <lastmod>2018-03-10T13:36:25.863Z</lastmod>
+    <data>
+        <display>
+        <title>Swift 下用代码实现渐变色背景</title>
+        <pubTime>2016-02-21T03:35:00.000Z</pubTime>
+        
+        <tag>Swift</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS 开发" url="http://fuhanlee.com/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fuhanlee.com/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/</loc>
+    <lastmod>2018-03-10T13:35:41.993Z</lastmod>
+    <data>
+        <display>
+        <title>习惯养成的四点原则</title>
+        <pubTime>2016-02-17T13:45:38.000Z</pubTime>
+        
+        <tag>电台</tag>
+         
+         
+           
+             
+              <breadCrumb title="其他" url="http://fuhanlee.com/categories/%E5%85%B6%E4%BB%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fuhanlee.com/2017/06/30/askRightQuestionInResearch/</loc>
+    <lastmod>2018-03-10T13:34:30.941Z</lastmod>
     <data>
         <display>
         <title>在用户研究的过程中问正确的问题</title>
-        <pubTime>2018-03-10T13:26:39.000Z</pubTime>
+        <pubTime>2017-06-30T13:26:39.000Z</pubTime>
         
         <tag>用户研究</tag>
          
@@ -213,44 +311,6 @@
 
     
   <url>
-    <loc>http://fuhanlee.com/2015/09/13/2015-09-13-hacking-with-swift-xue-xi-bi-ji/</loc>
-    <lastmod>2016-02-25T12:46:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>Swift 语法入门学习笔记</title>
-        <pubTime>2015-09-13T09:06:01.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="iOS" url="http://fuhanlee.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://fuhanlee.com/2016/02/25/Raywenderlich-%E7%9A%84-UISearchController-%E6%95%99%E7%A8%8B%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2016-02-25T12:44:47.000Z</lastmod>
-    <data>
-        <display>
-        <title>Swift 下 UISearchController 的使用</title>
-        <pubTime>2016-02-25T02:53:34.000Z</pubTime>
-        
-        <tag>翻译,Swift</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="http://fuhanlee.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://fuhanlee.com/2015/11/04/2015-11-04-ying-yu-mo-fa-shi-xue-xi-bi-ji/</loc>
     <lastmod>2016-02-22T14:25:02.000Z</lastmod>
     <data>
@@ -284,66 +344,6 @@
            
              
               <breadCrumb title="摄影" url="http://fuhanlee.com/categories/%E6%91%84%E5%BD%B1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://fuhanlee.com/2015/12/05/2015-12-05-zai-swift-zhong-shi-yong-api-json-nsdata/</loc>
-    <lastmod>2016-02-21T04:09:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>在 Swift 中使用 API（JSON、NSData）</title>
-        <pubTime>2015-12-05T03:17:38.000Z</pubTime>
-        
-        <tag>Swift</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="http://fuhanlee.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://fuhanlee.com/2016/02/17/post%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90%E7%9A%84%E5%9B%9B%E7%82%B9%E5%8E%9F%E5%88%99/</loc>
-    <lastmod>2016-02-21T04:08:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>习惯养成的四点原则</title>
-        <pubTime>2016-02-17T13:45:38.000Z</pubTime>
-        
-        <tag>电台</tag>
-         
-         
-           
-             
-              <breadCrumb title="电台节目文本" url="http://fuhanlee.com/categories/%E7%94%B5%E5%8F%B0%E8%8A%82%E7%9B%AE%E6%96%87%E6%9C%AC/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://fuhanlee.com/2016/02/21/Swift-%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%B8%90%E5%8F%98%E8%89%B2%E8%83%8C%E6%99%AF/</loc>
-    <lastmod>2016-02-21T03:49:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>Swift 下用代码实现渐变色背景</title>
-        <pubTime>2016-02-21T03:35:00.000Z</pubTime>
-        
-        <tag>Swift</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="http://fuhanlee.com/categories/iOS/"/>
           
         </display>
     </data>
