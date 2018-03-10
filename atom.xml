@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Fuhan Lee</title>
-  <subtitle>记录思考、学习与见闻。</subtitle>
+  <title>F.Lee</title>
+  <subtitle>UX and Filmmaking.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fuhanlee.com/"/>
