@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fuhanlee.com/"/>
-  <updated>2018-03-10T13:45:15.229Z</updated>
+  <updated>2018-03-13T13:51:57.384Z</updated>
   <id>http://fuhanlee.com/</id>
   
   <author>
@@ -14,6 +14,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>15张照片描述我走过的香港</title>
+    <link href="http://fuhanlee.com/2018/03/13/15picshongkong/"/>
+    <id>http://fuhanlee.com/2018/03/13/15picshongkong/</id>
+    <published>2018-03-13T13:37:38.000Z</published>
+    <updated>2018-03-13T13:51:57.384Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/hongkong/1.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/2.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/3.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/4.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/5.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/6.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/7.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/8.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/9.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/10.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/11.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/12.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/13.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/14.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/15.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/hongkong/1.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hongkong/2.JPG&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p
+    
+    </summary>
+    
+      <category term="影视影像" scheme="http://fuhanlee.com/categories/%E5%BD%B1%E8%A7%86%E5%BD%B1%E5%83%8F/"/>
+    
+    
+      <category term="旅行" scheme="http://fuhanlee.com/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>与用研人员合作的10个正确姿势</title>
@@ -1167,39 +1223,6 @@
     </summary>
     
       <category term="iOS 开发" scheme="http://fuhanlee.com/categories/iOS-%E5%BC%80%E5%8F%91/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello world</title>
-    <link href="http://fuhanlee.com/2015/09/01/2015-09-01-hello-world/"/>
-    <id>http://fuhanlee.com/2015/09/01/2015-09-01-hello-world/</id>
-    <published>2015-09-01T01:03:17.000Z</published>
-    <updated>2016-02-17T10:50:26.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Test，博客的第一篇文章。&lt;/p&gt;
-&lt;p&gt;其实早在几星期前就想搭一个自己的 blog，但因为各种原因迟迟没有完成。先后尝试过 Wordpress，Weebly，但总觉得不是真正的「属于自己的博客」，其实之前也有了解过 Octopress，但是一看官网写明需要 Git 基础就吓得落跑了..&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;昨晚决定把这事儿搞定，Google到了 Octopress + Github pages 搭建免费博客的方法，参考了多位 Bloger 的教程文章，过程中几经坎坷，总算是在当晚搭起了一个简易博客。&lt;/p&gt;
-&lt;p&gt;至于为什么搭建这个博客，主要还是希望能在一个属于自己的地方总结生活中的方方面面，让知识和思想沉淀。&lt;/p&gt;
-&lt;p&gt;目前该博客的主要内容大致是：读书笔记，学习笔记，思考总结，文章读后感与分享等等，后期也可能会开始尝试翻译外文。&lt;/p&gt;
-&lt;p&gt;随着学习的深入，本博客会越来越完善和个性化，也会逐渐丰富内容。&lt;/p&gt;
-&lt;p&gt;最后，在此感谢所有乐于在网络上分享经验和知识的大神们，以及了不起的开源世界！&lt;/p&gt;
-&lt;p&gt;搭建本博客所参考的文章链接：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://octopress.org/docs/setup/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://octopress.org/docs/setup/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.leichunfeng.com/blog/2014/11/11/use-octopress-plus-github-pages-to-setup-a-personal-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.leichunfeng.com/blog/2014/11/11/use-octopress-plus-github-pages-to-setup-a-personal-blog/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://msching.github.io/blog/2014/04/11/starting/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://msching.github.io/blog/2014/04/11/starting/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Test，博客的第一篇文章。&lt;/p&gt;
-&lt;p&gt;其实早在几星期前就想搭一个自己的 blog，但因为各种原因迟迟没有完成。先后尝试过 Wordpress，Weebly，但总觉得不是真正的「属于自己的博客」，其实之前也有了解过 Octopress，但是一看官网写明需要 Git 基础就吓得落跑了..
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://fuhanlee.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
